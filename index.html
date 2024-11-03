@@ -2,257 +2,804 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
-    <title>Welcome to my portfolio</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio - Sk Nayem Ali</title>
 
-    <!--Adding css file's link-->
-    <link rel="stylesheet" href="protfolio.css">
+  <!-- bootstrap css cdn link  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 
+  <!-- custom css file -->
+  <link rel="stylesheet" href="css/style.css" />
 
-    <!--Adding boxicon (hamburger-icon) link -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-    <!-- Adding fonts (source-> google fonts) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Rubik:wght@300;400;800&display=swap"
-        rel="stylesheet">
+  <!-- bootstrap icon cdn link  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- jquery cdn link  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body>
-
-    <!-- header and Navbar : -->
-
-    <header>
-        <a href="#" class="logo">Welcome to <span>MyPortfolio</span></a>
-
-        <!-- we have to add 2 classes bx and bx-menu   to add boxicon from internet github-->
-        <div class="bx bx-menu" id="menu-icon"></div>
-
-        <ul class="navbar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
+  <!-- navbar starts -->
+  <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">Portfolio</a>
+      <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="bi bi-menu-button-fill"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonial">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#achivement">Achievements</a>
+          </li>
         </ul>
-    </header>
+      </div>
+      <a class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block" href="#contact">Contact</a>
+    </div>
+  </nav>
+  <!-- navbar ends here -->
+
+  <!-- home section starts  -->
+  <section class="home pt-5 pb-5" id="home">
+    <div class="row justify-content-evenly align-middle">
+      <!-- here data-aos is used for adding aos animation  -->
+      <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+        <h2 style="color: #3f396d">
+          Hello! I Am <br /><span class="c-orange auto-type"></span>
+        </h2>
+
+        <p class="text-muted">
+          I'm a final year B.Tech CSE student from the Academy of Technology under MAKAUT, AICTE, with a strong
+          foundation in problem solving and I am also a competitive programmer with a solid understanding of Data
+          Structures and Algorithms (DSA).
+          Additionally, I have hands-on experience in web development creating fully responsive websites, incorporating
+          both front-end and back-end technologies. My expertise includes HTML, CSS, JavaScript, Node.js, and API
+          development, enabling me to build efficient and dynamic web applications.
+        </p>
+        <a href="Nayem_New_Resume_with_pic.pdf" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" target="_blank">
+          Hire Me
+        </a>
+     <!-- Social Media Buttons -->
+     <div class="social-media">
+      <a href="https://github.com/SkNayemAli" class="image-button" target="_blank">
+          <img src="images/github.png" alt="GitHub Logo">
+      </a>
+      <a href="https://www.linkedin.com/in/sk-nayem-ali-590044231/" class="image-button" target="_blank">
+          <img src="images/linkedin.jpg" alt="LinkedIn Logo">
+      </a>
+      <a href="https://www.instagram.com/__callmesk01/profilecard/?igsh=eml0OHY0YzRya2tu" class="image-button" target="_blank">
+          <img src="images/instagram.png" alt="Instagram Logo">
+      </a>
+      <a href="https://www.facebook.com/sknayem.ali.79?mibextid=LQQJ4d" class="image-button" target="_blank">
+          <img src="images/facebook.png" alt="Facebook Logo">
+      </a>
+      <a href="https://twitter.com/its_nayem001" class="image-button" target="_blank">
+          <img src="images/x.png" alt="Twitter Logo">
+      </a>
+  </div>
+  
+<!--end of social media button-->
+
+        <a href="" class="link ms-4 d-none">See My Work</a>
+      </div>
+
+      <div class="col-10 col-md-4 d-none d-md-block">
+        <img src="images/Nayem_Style.jpg" class="img-fluid" alt="" />
+      </div>
+
+    </div>
+    
+    
+    
+
+    </div>
+  </section>
+  <!-- home section ends here -->
 
 
-    <!-- Home  -->
-    <section class="home" id="home">
-        <div class="home-text">
-            <h5>Hello , I am</h5>
-            <h1>Sk Nayem Ali</h1>
-            <h4>I am a <span>3rd Year CSE student under MAKAUT(AOT). I am also a Web Developer and Competitive
-                    programmer</span> <!--and <span>I have some knowladge of Intraday trading,Bank Nifty,Nifty,Copy Trading
-                    etc.</span> </h4>-->
-            <p><b>I have some knowladge of Intraday trading, Bank Nifty, Nifty, Copy Trading etc.</b></p>
-            <a href="https://drive.google.com/file/d/1DfQ-BqHiauAfJ2s8xfCIFeyGF1TZcVH6/view?usp=sharing"
-                class="btn">Download Resume</a>
-            <a href="https://www.linkedin.com/in/sk-nayem-ali-590044231/" target="_blank"></a>
-            <div>
-                <a href="https://github.com/SkNayemAli" target="_blank" class="fa fa-github"></a>
-                <a href="https://www.linkedin.com/in/sk-nayem-ali-590044231/" target="_blank"
-                    class="fa fa-linkedin"></a>
-                <a href="https://www.facebook.com/sknayem.ali.79?mibextid=ZbWKwL" target="_blank"
-                    class="fa fa-facebook"></a>
-                <a href="https://instagram.com/____nayem001?igshid=NGExMmI2YTkyZg==" target="_blank"
-                    class="fa fa-instagram"></a>
-                <a href="https://twitter.com/its_nayem001?t=GbdufGSZKIsel2gTgkKTog&s=09" target="_blank"
-                    class="fa fa-twitter"></a>
+
+  <!-- expertise section starts -->
+  <section class="expertise mt-5" id="service">
+    <div class="heading text-center">
+      <small>My Expertise</small>
+      <h3>
+        Provide Wide Range of <br />
+        Digital Services
+      </h3>
+    </div>
+    <div class="row justify-content-evenly mt-5">
+      <div class="col-10 col-md-4" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img src="images/service-icon1.png" class="w-25 img-fluid img" alt="" />
+          </div>
+          <div class="content mt-3">
+            <h4>Problem Solving</h4>
+            <p class="text-muted">
+              With a strong foundation in data structures and algorithms (DSA),
+              I specialize in solving complex coding challenges efficiently.
+              My expertise extends to identifying and fixing bugs in code,
+              ensuring robust and optimized solutions. Whether it’s
+              algorithmic problem-solving, optimizing code performance,
+              or debugging, I am dedicated to delivering clean,
+              error-free code that meets high standards. My goal
+              is to improve functionality, enhance code quality,
+              and provide scalable solutions to technical challenges.
+            </p>
+            <a href="" class="link">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-10" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img src="images/service-icon2.png" class="w-25 img-fluid img" alt="" />
+          </div>
+          <div class="content mt-3">
+            <h4>Web Development</h4>
+            <p class="text-muted">
+              As a web developer, I specialize in building responsive,
+              user-friendly websites that deliver a seamless experience
+              across all devices. With expertise in front-end technologies
+              like HTML, CSS, JavaScript, and frameworks such as Angular,
+              I create dynamic and visually appealing interfaces. On the back-end,
+              I leverage Node.js and APIs to develop scalable, high-performance applications.
+              From designing sleek UI to ensuring fast-loading pages and secure databases,
+              I focus on creating solutions that are both functional and aesthetically pleasing,
+              tailored to meet user needs and business goals.
+            </p>
+            <a href="" class="link">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-10" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img src="images/service-icon3.png" class="w-25 img-fluid img" alt="" />
+          </div>
+          <div class="content mt-3">
+            <h4>Debugging</h4>
+            <p class="text-muted">
+              I excel in identifying and resolving issues within complex codebases, ensuring optimal functionality and
+              performance. With a sharp eye for detail and a deep understanding of programming languages, I
+              systematically track down bugs and implement effective solutions. My debugging process involves analyzing
+              code, isolating problems, and testing fixes to ensure stability and efficiency. Whether it's resolving
+              logical errors, runtime issues, or optimizing code performance, I am dedicated to delivering clean,
+              error-free code that enhances the overall system reliability.
+            </p>
+            <a href="" class="link">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- expertise section ends here -->
+
+  <!-- skill section starts -->
+  <section class="skill mt-5 py-5" id="about">
+    <div class="row justify-content-evenly">
+      <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+        <div class="row justify-content-evenly">
+          <!-- DSA -->
+          <div class="col-10 col-md-6">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress dsa" style="--progress: 90;">
+                <span class="progress-value dsa-progress">90%</span>
+              </div>
+              <br />
+              <span class="text">DSA</span>
             </div>
-
-        </div>
-        <div class="home-img">
-            <img src="black dress.jpeg" alt="">
-        </div>
-    </section>
-
-    <!-- About -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="white dress.jpeg" alt="">
-        </div>
-        <div class="about-text">
-            <h3><span><b>
-                        <font color="pink">ABOUT ME</font>
-                    </b></span></h3>
-            <h2>I am a Third Year , Computer Science engineering Undergrad Student of AOT .</h2>
-            <p< /p>
-                <div class="count">
-                    <a href="#"><span>4⭐</span>
-                        <h3> at <span>
-                                <font color="lightgreen"> HackerRank</font>
-                            </span>
-                    </a></h3>
-                    <p>
-                    <h3><span>Participate</span> in <span>
-                            <font color="lightgreen"> SSOC</font>
-                        </span> season2 as an open source contributor</h3>
-                    </p>
-                    <p>
-                    <h3><span>Participate</span> in <span>
-                            <font color="lightgreen"> GSSOC'23</font>
-                        </span> season2 as an open source contributor</h3>
-                    </p>
-                </div>
-                <div class="about-btn">
-                    <a href="#" class="btn">Download Resume</a>
-                    <a href="#" class="btn">Contact me</a>
-                </div>
-        </div>
-    </section>
-
-    <!-- Services -->
-    <section class="services" id="services">
-        <div class="center">
-            <h1><br>
-                <font color="yellow">
-                    <font size="6cm">MY KNOWLADGE!
-            </h1>
-            </font></br></font>
-        </div>
-        <div class="service-content">
-            <div class="row">
-                <i class="bx bx-cast"></i>
-                <!--we have to add 2 classes bx and bx-cast   to add boxicon from boxicon-github-->
-                <h3>
-                    <font color="yellow">Web Development
-                </h3>
-                </font>
-                <p>
-                <h4>I use technologies such as : HTML5 , CSS3 , javascript for static websites and now-a-days I am
-                    learning React.js framework of javascript.</h4>
-                </p>
+          </div>
+          <!-- C++ -->
+          <div class="col-10 col-md-6 mt-4 mt-md-0">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress cpp" style="--progress: 90;">
+                <span class="progress-value cpp-progress">90%</span>
+              </div>
+              <br />
+              <span class="text">C++</span>
             </div>
-            <div class="row">
-                <!--we have to add 2 classes bx and bx-layer to add boxicon from boxicon-github-->
-                <i class="bx bx-line-chart"></i>
-                <h3>
-                    <font color="yellow">Investing & Trading
-                </h3>
-                </font>
-                <p>
-                <h4>Intraday Trading, Copy Trading, Option Trading.</h4>
-                </p>
-            </div>
-            <div class="row">
-                <i class="bx bx-user"></i>
-                <!--we have to add 2 classes bx and bx-user to add boxicon from boxicon-github-->
-                <h3>
-                    <font color="yellow">Social-Media4</font>
-                </h3>
-                <p>
-                <h4>I am a social guy and I have a bit of EXPERIENCE in handling social media accounts like
-                    Facebook,whatsapp, Instagram , snapchat etc of clients and friends.</h4>
-                </p>
-            </div>
-
-    </section>
-
-    <!-- Call to action -->
-    <section class="cta">
-        <h4>Have Any Project In Your Mind? </h4>
-        <h2>Just Say Hello ! </h2>
-        <a href="#" class="btn">Hire Me</a>
-    </section>
-
-    <!-- Resume -->
-    <section class="resume" id="resume">
-        <div class="center">
-            <h3>EDUCATION & EXPERIENCE</h3>
-        </div>
-        <div class="resume-content">
-            <div class="box">
-
-                <h4>
-                    <font color="ocean">B.Tech In CSE
-                </h4>
-                </font>
-                <p>
-
-                </p>
-                <p>Currently persuing B.tech in computer Science & Engineering in 3rd year from AOT under MAKAUT.
-                    Currently I'm in 3rd year.I know C/C++, DSA, Front end web development.</p>
-                <h5>
-                    <font color="lightblue">PRESENT...
-                </h5>
-                </font>
-            </div>
-            <div class="box">
-                <h4>
-                    <font color="ocean">Higher Secondary
-                </h4>
-                </font>
-                <p>
-
-                </p>
-                <p>Completed Higher Secondary education form Chaipat High School under WBCHSE board with 78% above
-                    marks.</p>
-                <h5>
-                    <font color="lightblue">2021
-                </h5>
-                </font>
-            </div>
-            <div class="box">
-                <h4>
-                    <font color="ocean">Secondary
-                </h4>
-                </font>
-                <p>
-
-                </p>
-                <p>Completed Secondary education form Chaipat High School under WBBSE board with 62% above marks</p>
-                <h5>
-                    <font color="lightblue">2019
-                </h5>
-                </font>
-            </div>
-            <!--<div class="box">
-                <h6>Date-Date</h6>
-                <h4>Web development</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, praesentium. Nam, at doloribus?
-                    Nobis mollitia enim harum aspernatur est tempore quod dignissimos quam unde quisquam!</p>
-                <h5>University</h5>
-            </div>
-        -->
-        </div>
-    </section>
-
-    <!-- Contact Me -->
-    <section class="contact" id="contact">
-        <div class="center">
-            <h3>CONTACT ME</h3>
+          </div>
         </div>
 
-        <div class="form">
-            <form action="https://formsubmit.co/sknayemali227@gmail.com" method="POST">
-                <form action="https://formsubmit.co/el/zihuto" method="POST">
-                <input type="text" name="name" required placeholder="Your Name" required>
-                <input type="email" name="email" id="emailInfo" required placeholder="Email" required>
-                <input type="contact" name="Phone" id="PhoneNumber" required placeholder="Phone Number" required>
-                <textarea name="form-control" id="Comments" cols="30" rows="10" required placeholder="How Can I Help You?"></textarea>
-                <div class="center"><input type="submit" name="send" value="send" class="send-btn"></div>
-            </form>
+        <div class="row justify-content-evenly mt-4">
+          <!-- C -->
+          <div class="col-10 col-md-6">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress c" style="--progress: 90;">
+                <span class="progress-value c-progress">90%</span>
+              </div>
+              <br />
+              <span class="text">C</span>
+            </div>
+          </div>
+          <!-- SQL -->
+          <div class="col-10 col-md-6 mt-4 mt-md-0">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress sql" style="--progress: 75;">
+                <span class="progress-value sql-progress">75%</span>
+              </div>
+              <br />
+              <span class="text">SQL</span>
+            </div>
+          </div>
         </div>
 
-    </section>
+        <div class="row justify-content-evenly mt-4">
+          <!-- HTML & CSS -->
+          <div class="col-10 col-md-6">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress html-css" style="--progress: 0;">
+                <span class="progress-value html-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">HTML & CSS</span>
+            </div>
+          </div>
+          <!-- JavaScript -->
+          <div class="col-10 col-md-6 mt-4 mt-md-0">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress javascript" style="--progress: 0;">
+                <span class="progress-value javascript-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">JavaScript</span>
+            </div>
+          </div>
+        </div>
 
-    <!-- footer -->
-    <div class="footer">
-        <p>Thanks for visiting my Website ... Wishing you good luck Ahead<br> Created by Sk Nayem Ali </p>
+        <div class="row justify-content-evenly mt-4">
+          <!-- Node.js -->
+          <div class="col-10 col-md-6">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress nodejs" style="--progress: 50;">
+                <span class="progress-value nodejs-progress">50%</span>
+              </div>
+              <br />
+              <span class="text">Node.js</span>
+            </div>
+          </div>
+          <!-- API -->
+          <div class="col-10 col-md-6 mt-4 mt-md-0">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress api" style="--progress: 70;">
+                <span class="progress-value api-progress">70%</span>
+              </div>
+              <br />
+              <span class="text">API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Details Section -->
+      <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+        <div class="heading mt-5 mt-md-3">
+          <div class="heading mt-5 mt-md-3">
+            <h2 class="skills-title">My Skills</h2>
+            <small class="skills-title">Beautiful & Unique Digital Experiences </small>
+            <p class="text-muted">
+              With a strong foundation in problem-solving, I excel in Data Structures and Algorithms (DSA),
+              demonstrating a proficiency level of 90%. My skills in C++, C, and SQL are equally robust, each at 90% and
+              75%, respectively, allowing me to tackle complex programming challenges with ease.
+            </p>
+            <p class="text-muted">
+              I am well-versed in web technologies, particularly HTML and CSS, with a proficiency level of 90%,
+              complemented by 75% in JavaScript. Additionally, I have hands-on experience in Node.js and API
+              development, with proficiency levels of 50% and 70%, respectively, enabling me to build efficient and
+              effective web applications.
+            </p>
+          </div>
+
+
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            <!-- here download attribute is used for adding download functionality to button  -->
+            <a href="Nayem_New_Resume_with_pic.pdf" download="Resume"
+              style="text-decoration: none;color: #fff;">Download Resume</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- skill section end here -->
+
+
+
+  <!-- portfolio section starts here -->
+  <section class="portfolio" id="portfolio">
+    <div class="heading text-center pt-5">
+      <small>Creative Work</small>
+      <h3>Check My Projects</h3>
     </div>
 
-    <!-- link added for scrollREveal  -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!--link to JS-->
-    <script src="protfolio.js"></script>
+    <div id="myBtnContainer" class="text-center mt-4">
+     <!-- Projects Section -->
+<section class="portfolio">
+  <div class="filter-controls text-center mb-4">
+    <button class="filter-item" data-filter="all">All</button>
+    <button class="filter-item" data-filter="app">App</button>
+    <button class="filter-item" data-filter="webapp">Web App</button>
+    <button class="filter-item" data-filter="website">Website</button>
+  </div>
+  
+  <div class="portfolio-body">
+    <div class="row justify-content-evenly px-4">
+      
+      <!-- CHAT-US Project -->
+<div class="post col-md-4 app all col-10 mt-3 mt-md-0" data-aos="fade-up">
+  <div class="card text-center">
+    <img src="images/Chat.jpg" class="card-img-top mobile-screen mx-auto" alt="CHAT-US Image" />
+    <div class="card-body">
+      <h4 class="card-title">CHAT-US</h4>
+      <span class="badge bg-secondary badge-pill">Java</span>
+      <span class="badge bg-secondary badge-pill">Kotlin</span>
+      <span class="badge bg-secondary badge-pill">APIs</span>
+      <span class="badge bg-secondary badge-pill">UI Components: XML, Android UI Libraries</span>
+      <span class="badge bg-secondary badge-pill mb-2">App</span><br />
+      <a href="#" class="link">
+        CHAT-US enables offline messaging for emergencies, ensuring communication when internet access is unavailable, crucial during disasters or in remote areas.
+      </a>
+    </div>
+  </div>
+</div>
+
+      
+      <!-- Compile-X Project -->
+      <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card">
+          <img src="images/compilerr.jpg" class="card-img-top" alt="Compile-X Image" />
+          <div class="card-body text-center">
+            <h4 class="card-title">Compile-X</h4>
+            <span class="badge bg-secondary badge-pill">HTML & CSS</span>
+            <span class="badge bg-secondary badge-pill">JavaScript</span>
+            <span class="badge bg-secondary badge-pill">Node.js</span>
+            <span class="badge bg-secondary badge-pill">API</span>
+            <span class="badge bg-secondary badge-pill mb-2">Website</span><br />
+            <a href="#" class="read-more-btn link">Compile-X: An online compiler supporting C/C++, Java, and Python, providing a seamless environment for efficient code compilation and execution across multiple languages.</a>
+          </div>
+        </div>
+      </div>
+      
+     <!-- Personal Assistant Project -->
+      <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card">
+          <img src="images/jarvish.png" class="card-img-top" alt="Dictionary Image" />
+          <div class="card-body text-center">
+            <h4 class="card-title">JARVISH - A Personal Assistant</h4>
+            <span class="badge bg-secondary badge-pill">CPP</span>
+            <span class="badge bg-secondary badge-pill">HTML & CSS</span>
+            <span class="badge bg-secondary badge-pill">JavaScript</span>
+            <span class="badge bg-secondary badge-pill mb-2">Web App</span><br />
+            <a href="#" class="read-more-btn link">A C++ Personal Assistant that helps you stay organized by managing tasks, setting reminders, scheduling events, and offering entertainment options. It uses C++ libraries for smooth performance and features an easy-to-use command-line.
+              interface.</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="row justify-content-evenly mt-4 px-4">
+      
+      <!-- PicEditor App Project -->
+      <div class="post col-md-4 app all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card">
+          <img src="images/piceditor.png" class="card-img-top" alt="PicEditor Image" />
+          <div class="card-body text-center">
+            <h4 class="card-title">PicEditor App</h4>
+            <span class="badge bg-secondary badge-pill">HTML & CSS</span>
+            <span class="badge bg-secondary badge-pill">JavaScript</span>
+            <span class="badge bg-secondary badge-pill mb-2">App</span><br />
+            <a href="#" class="read-more-btn link">Read More</a>
+          </div>
+        </div>
+      </div>
+      
+      
+      <!-- Lang Translator Project -->
+      <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+        <div class="card">
+          <img src="images/lang-translator.png" class="card-img-top" alt="Lang Translator Image" />
+          <div class="card-body text-center">
+            <h4 class="card-title">Lang Translator</h4>
+            <span class="badge bg-secondary badge-pill">HTML & CSS</span>
+            <span class="badge bg-secondary badge-pill">JavaScript</span>
+            <span class="badge bg-secondary badge-pill mb-2">Web App</span><br />
+            <a href="#" class="read-more-btn link">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Portfolio section ends here -->
+
+
+  <!-- testimonial section starts  -->
+  <section class="testimonial mt-5 pt-5" id="testimonial">
+    <div class="row justify-content-evenly">
+      <div class="col-md-4 col-10" data-aos="slide-right">
+        <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
+      </div>
+      <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+        <div class="heading">
+          <small>Testimonials</small>
+          <h3>Happy Clients Feedback</h3>
+          <!-- here we will use carousel element from bootstrap -->
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row justify-content-evenly">
+                  <div class="col-2 text-center">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="col-10">
+                    <p class="text-muted">
+                      Quisruam est, qui dolorem ipsum quia dolor sit amet,
+                      consecteaur aeci velit, sed quia non numquam eius modi
+                      tempora incidunt ut lao magnam aliquam quaerat ...
+                    </p>
+                    <h4>Kevin Andrew</h4>
+                    <small class="fs-6 text-muted">CEO of Company</small>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-evenly">
+                  <div class="col-2 text-center">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="col-10">
+                    <p class="text-muted">
+                      Quisruam est, qui dolorem ipsum quia dolor sit amet,
+                      consecteaur aeci velit, sed quia non numquam eius modi
+                      tempora incidunt ut lao magnam aliquam quaerat ...
+                    </p>
+                    <h4>Kevin Andrew</h4>
+                    <small class="fs-6 text-muted">CEO of Company</small>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-evenly">
+                  <div class="col-2 text-center">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="col-10">
+                    <p class="text-muted">
+                      Quisruam est, qui dolorem ipsum quia dolor sit amet,
+                      consecteaur aeci velit, sed quia non numquam eius modi
+                      tempora incidunt ut lao magnam aliquam quaerat ...
+                    </p>
+                    <h4>Kevin Andrew</h4>
+                    <small class="fs-6 text-muted">CEO of Company</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="nextprev-btn rounded-pill prev-btn" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <i class="bi bi-arrow-left-circle-fill prev"></i>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="nextprev-btn rounded-pill next-btn" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <i class="bi bi-arrow-right-circle-fill next"></i>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- testimonial ends here -->
+
+<!-- Achievement section starts -->
+<section class="achivement mt-5 pb-5" id="achivement">
+  <div class="heading text-center pt-5">
+    <small>My Success</small>
+    <h3>Achievements</h3>
+  </div>
+  <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+
+    <!-- Achievement 1 -->
+    <div class="achievement-item col-md-4 col-10 mt-2 mt-md-0">
+      <h4 class="card-title" style="color: rgb(67, 64, 64);">🏆 TECHNOVA_2K24 Grand Finalist🥇 One of the Top 7 Teams in All India Organized by ESSPL</h4>
+      <div class="card">
+        <img src="images/digital.jpg" class="card-img-top rounded-4" alt="Achievement 1" />
+        <div class="card-body px-4">
+          <div class="row mb-3">
+            <div class="col-4">
+              <img src="images/technova.jpg" class="img-fluid rounded-4" alt="Technova Image 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage('images/technova.jpg')" />
+            </div>
+            <div class="col-4">
+              <img src="images/me.jpg" class="img-fluid rounded-4" alt="Technova Image 2" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage('images/me.jpg')" />
+            </div>
+            <div class="col-4">
+              <img src="images/mee.jpg" class="img-fluid rounded-4" alt="Technova Image 3" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage('images/mee.jpg')" />
+            </div>
+            <div class="col-4">
+              <img src="images/hotel.jpg" class="img-fluid rounded-4" alt="Technova Image 4" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage('images/hotel.jpg')" />
+            </div>
+            <div class="col-4">
+              <img src="images/g3.jpg" class="img-fluid rounded-4" alt="Technova Image 5" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage('images/g3.jpg')" />
+            </div>
+            <div class="col-4">
+              <img src="images/g2.jpg" class="img-fluid rounded-4" alt="Technova Image 6" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage('images/g2.jpg')" />
+            </div>
+            <div class="col-4">
+              <img src="images/hall.jpg" class="img-fluid rounded-4" alt="Technova Image 7" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage('images/hall.jpg')" />
+            </div>
+            <div class="col-4">
+              <img src="images/g1.jpg" class="img-fluid rounded-4" alt="Technova Image 8" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage('images/g1.jpg')" />
+            </div>
+          </div>
+          <small>By Sk Nayem Ali</small><span class="ms-3">4th Oct</span>
+          <p class="text-muted">
+            I had an amazing experience at the TECHNOVA_2k24 Grand Finale, where our team, TroTech, was recognized as one of the top 7 finalists for our project, Chat-Us. This journey taught us resilience and teamwork, paving the way for future opportunities!
+          </p>
+          <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#achievementModal1">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Achievement 2 -->
+    <div class="achievement-item col-md-4 col-10 mt-2 mt-md-0">
+      <h4 class="card-title" style="color: rgb(67, 64, 64);">💡Salesforce Developer Internship</h4>
+      <div class="card">
+        <img src="images/salesforce.jpg" class="card-img-top rounded-4" alt="Achievement 2" />
+        <div class="card-body px-4">
+          <small>By Sk Nayem Ali</small><span class="ms-3">Jul-Aug</span>
+          <p class="text-muted">
+            I successfully completed my Salesforce Developer Virtual Internship, gaining hands-on experience in key areas like Apex development, process automation, and Lightning Web Components. This opportunity has deepened my passion for Salesforce technology and prepared me to create impactful solutions in the future!
+          </p>
+          <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#achievementModal1">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Achievement 3 -->
+    <div class="achievement-item col-md-4 col-10 mt-2 mt-md-0">
+      <h4 class="card-title" style="color: rgb(67, 64, 64);">🚀Wipro Talent Next</h4>
+      <div class="card">
+        <img src="images/wipro.jpg" class="card-img-top rounded-4" alt="Achievement 3" />
+        <div class="card-body px-4">
+          <small>By Sk Nayem Ali</small><span class="ms-3">Sept - Oct</span>
+          <p class="text-muted">
+            I successfully completed the Wipro TalentNext Digital Skill Program in DotNet Full Stack Development and earned my certification. I'm excited to apply my enhanced skills to real-world projects and embrace new career opportunities!
+          </p>
+          <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#achievementModal1">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Achievement 4 -->
+    <div class="achievement-item col-md-4 col-10 mt-2 mt-md-0">
+      <h4 class="card-title" style="color: rgb(67, 64, 64);">💡Google Foundation Project Management</h4>
+      <div class="card">
+        <img src="images/google.jpg" class="card-img-top rounded-4" alt="Achievement 4" />
+        <div class="card-body px-4">
+          <small>By Sk Nayem Ali</small><span class="ms-3">Sept - Oct</span>
+          <p class="text-muted">
+            Certified in Foundations of Project Management by Google and Coursera! 📜 Ready to take on new challenges and lead projects with confidence.
+          </p>
+          <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#achievementModal1">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Achievement 5 -->
+    <div class="achievement-item col-md-4 col-10 mt-2 mt-md-0">
+      <h4 class="card-title" style="color: rgb(67, 64, 64);">🚀 Infosys Certifications</h4>
+      <div class="row mb-3">
+        <div class="col-4">
+          <img src="images/html.jpg" class="img-fluid rounded-4" alt="HTML Certification" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage('images/html.jpg')" />
+        </div>
+        <div class="col-4">
+          <img src="images/css.jpg" class="img-fluid rounded-4" alt="CSS Certification" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage('images/css.jpg')" />
+        </div>
+        <div class="col-4">
+          <img src="images/js.jpg" class="img-fluid rounded-4" alt="JavaScript Certification" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="setImage('images/js.jpg')" />
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body px-4">
+          <small>By Sk Nayem Ali</small><span class="ms-3">Sept - Oct</span>
+          <p class="text-muted">
+            I successfully completed the Wipro TalentNext Digital Skill Program in DotNet Full Stack Development and earned my certification. I'm excited to apply my enhanced skills to real-world projects and embrace new career opportunities!
+          </p>
+          <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#achievementModal1">Read More</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Modal for displaying the image -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageModalLabel">Achievement Image</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImage" src="" class="img-fluid" alt="Full Image" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript to set the image in the modal -->
+<script>
+  function setImage(imageSrc) {
+    document.getElementById('modalImage').src = imageSrc;
+  }
+</script>
+
+
+
+
+
+  <!-- contact section starts --> 
+<section class="contact py-5" id="contact">
+  <div class="heading text-center">
+    <small>Get in Touch</small>
+    <h3>Any Questions? Feel Free to Contact</h3>
+  </div>
+  <div class="row justify-content-evenly mt-5">
+    <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-geo-alt-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>Kolkata, West Bengal, India</p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-telephone-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>+91 97******22</p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-send-fill"></i>
+        </div>
+        <div class="col-11">
+          <p>sknayemali227@gmail.com</p>
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-1">
+          <i class="bi bi-globe-americas"></i>
+        </div>
+        <div class="col-11">
+          <p>sknayemali.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+      <div class="contact-form">
+        <form action="https://formsubmit.co/sknayemali227@gmail.com" method="POST">
+          <div class="mb-3">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+          </div>
+          <div class="mb-3">
+            <input type="email" name="email" class="form-control" placeholder="E-mail" required />
+          </div>
+          <div class="mb-3">
+            <input type="text" name="phone" class="form-control" placeholder="Mobile No." required />
+          </div>
+          <div class="mb-3">
+            <textarea name="message" class="form-control" placeholder="Message" rows="5" required></textarea>
+          </div>
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- contact section ends here -->
+
+
+
+
+
+  <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+  <button type="button" class="btn btn-floating btn-lg rounded-pill" id="btn-back-to-top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- footer section starts  -->
+  <footer class="text-center text-muted py-4">
+    <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+    <div class="link-group mt-5" data-aos="fade-up">
+      <a href="#home">Home</a>
+      <div class="vr"></div>
+      <a href="#about">Skills</a>
+      <div class="vr"></div>
+      <a href="#service">Service</a>
+      <div class="vr"></div>
+      <a href="#portfolio">Projects</a>
+      <div class="vr"></div>
+      <a href="#achivement">Achievements</a>
+      <div class="vr"></div>
+      <a href="#contact">Contact</a>
+    </div>
+    <!--
+      <div class="social-links mt-5" data-aos="fade-up">
+      <button href="" class="rounded-pill dribble">
+        <i class="bi bi-dribbble"></i>
+      </button>
+      <button href="" class="rounded-pill whatsapp">
+        <i class="bi bi-whatsapp"></i>
+      </button>
+      <button href="" class="rounded-pill behance">
+        <i class="bi bi-behance"></i>
+      </button>
+    </div>
+    <hr class="text-muted my-4" />
+    -->
     
+
+    <div class="footer">
+      <p>Thanks for visiting my Website ... Wishing you good luck Ahead<br> Created by Sk Nayem Ali </p>
+    </div>
+  </footer>
+  <!-- footer section ends here -->
+
+  <!-- bootstrap javascript cdn link  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS library javascript link  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    // initializing AOS library
+    AOS.init({
+      duration: 1000,
+      offset: 50,
+    });
+  </script>
+  <!-- custom js file linking -->
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>
