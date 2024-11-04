@@ -1,0 +1,637 @@
+/* applying google font over the website  */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* styling menu icon */
+.nav-menu {
+    border: none;
+    background-color: #fff;
+    font-size: 1.5rem;
+    color: #fca61f;
+}
+
+/* styling navbar links  */
+.navbar-nav a {
+    color: black;
+    position: relative;
+}
+
+.navbar-nav a:hover {
+    color: #fca61f;
+}
+
+.navbar-nav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    top: 35px;
+    position: absolute;
+    background: #fca61f;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.navbar-nav a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+/* styling contact btn  */
+.c-btn {
+    border: none;
+    background: #fca61f;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* styling home section starts */
+.home {
+    background: linear-gradient(33deg, rgba(242, 242, 255, 1) 0%, rgba(235, 249, 255, 1) 100%);
+    padding: 30px 0px 10px 0px;
+}
+
+.home h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.c-orange {
+    color: #6f34fe;
+    font-weight: 700;
+}
+
+.home p {
+    width: fit-content;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.h-btn:hover {
+    background: #6f34fe;
+    color: #fff;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fca61f;
+    position: relative;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    top: 20px;
+    background-color: #6f34fe;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.link:hover {
+    color: #6f34fe;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* adding animation to home section image  */
+.home img {
+    animation: floatimg 4s ease-in-out infinite;
+}
+
+@keyframes floatimg {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-24px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* auto-typing effect for name */
+.auto-type {
+    color: #6f34fe; /* Match the color with existing theme */
+    font-weight: 700; /* Make it bold for emphasis */
+    border-right: 2px solid #6f34fe; /* Cursor effect */
+    animation: typing 3s steps(10), blink-caret 0.75s step-end infinite; /* Typing effect */
+    white-space: nowrap; /* Prevents text wrapping */
+    overflow: hidden; /* Hides overflow */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%; /* Adjust this based on the length of the text */
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent; /* Invisible when not blinking */
+    }
+    50% {
+        border-color: #6f34fe; /* Visible during blink */
+    }
+}
+/*My skill section highlight*/
+.skills-title {
+    font-family: 'Arial', sans-serif; /* Change this to your preferred font */
+    font-size: 2rem; /* Adjust size as needed */
+    font-weight: bold; /* Makes the text bold */
+    color: #340455; /* Change to your desired color */
+    /*text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+/* start social media accounts  */
+/* Social Media Section */
+.social-media {
+    display: flex; /* Flexbox to align buttons */
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px; /* Space above the social media section */
+}
+
+/* Social Media Button Styles start */
+.image-button {
+    background: var(--main-color); /* Background color */
+    color: var(--text-color); /* Text color */
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    display: flex; /* Use flexbox to center the icon */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    border-radius: 50%; /* Make it round */
+    margin: 0 10px; /* Space between buttons */
+    transition: transform 0.3s; /* Transition effect on hover */
+    border: 2px solid transparent; /* Optional: add a border */
+}
+
+.image-button:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    border: 2px solid var(--sec-main-color); /* Optional: border color on hover */
+}
+
+.image-button img {
+    width: 60%; /* Adjust logo size to fit better within the button */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: round the image to match the button */
+}
+/* Social Media Button Styles end */
+
+
+
+/* expertise section starts */
+.heading small {
+    color: #6f34fe;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.heading h3 {
+    margin-top: 0.5rem;
+    color: #3f396d;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.expertise h4 {
+    color: #3f396d;
+    font-weight: 700;
+}
+
+.expertise a {
+    text-decoration: none;
+    color: #fca61f;
+}
+
+.expertise a:hover {
+    color: #6f34fe;
+}
+
+.expertise .service-card {
+    text-align: center;
+    padding: 15px 15px;
+    border-radius: 0.7rem;
+}
+
+/* skill section starts */
+.skill {
+    background-color: rgb(234, 234, 249);
+    padding: 5rem 0; /* Added padding for top and bottom */
+}
+
+.progress-card {
+    padding: 12% 10% 10% 15%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10%;
+    transition: transform 0.6s; /* Smooth transition for scale effect */
+}
+
+.progress-card:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.circular-progress {
+    position: relative;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dynamic conic gradient for progress */
+.circular-progress.dsa {
+    background: conic-gradient(#e7e13a 90deg, #ededed 0deg);
+}
+
+.circular-progress.cpp {
+    background: conic-gradient(#360670 90deg, #ededed 0deg);
+}
+
+.circular-progress.c {
+    background: conic-gradient(#ca04dc 90deg, #ededed 0deg);
+}
+
+.circular-progress.sql {
+    background: conic-gradient(#0464be 75deg, #ededed 0deg);
+}
+
+.circular-progress.html-css {
+    background: conic-gradient(#fca61f 0deg, #ededed 0deg);
+}
+
+.circular-progress.javascript {
+    background: conic-gradient(#6f34fe 0deg, #ededed 0deg);
+}
+
+.circular-progress.nodejs {
+    background: conic-gradient(#20c997 50deg, #ededed 0deg);
+}
+
+.circular-progress.api {
+    background: conic-gradient(#e40404 70deg, #ededed 0deg);
+}
+
+/* Inner circle styling */
+.circular-progress::before {
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.progress-value {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.html-progress {
+    color: #fca61f;
+}
+
+.javascript-progress {
+    color: #6f34fe;
+}
+
+.dsa-progress {
+    color: #20c997;
+}
+
+.cpp-progress {
+    color: #20c997;
+}
+
+.c-progress {
+    color: #20c997;
+}
+
+.sql-progress {
+    color: #20c997;
+}
+
+.nodejs-progress {
+    color: #20c997;
+}
+
+.api-progress {
+    color: #20c997;
+}
+
+.text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 0.5rem; /* Add space above the text */
+}
+
+.heading {
+    margin-bottom: 2rem; /* Space below heading section */
+}
+
+.heading small {
+    font-size: 1rem;
+    color: #888; /* Color for the small text */
+}
+
+.heading h3 {
+    font-size: 2rem;
+    margin: 0.5rem 0; /* Adjust space above and below */
+}
+
+.heading p {
+    font-size: 1.3rem;
+    color: #666; /* Color for paragraph text */
+    margin: 0.5rem 0; /* Space above and below paragraphs */
+}
+
+/* Button styling */
+.c-btn {
+    background-color: #20c997; /* Button background color */
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.c-btn:hover {
+    background-color: #18a088; /* Darker shade on hover */
+}
+
+
+/* portfolio section starts */
+#myBtnContainer {
+    margin-bottom: 45px;
+}
+
+#myBtnContainer button {
+    border: none;
+    color: black;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 25px;
+}
+
+#myBtnContainer button:hover {
+    color: #fca61f;
+}
+
+#myBtnContainer button:focus {
+    outline: none;
+}
+
+.post .content h4 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.post .card {
+    border: none;
+}
+
+/* Chat-us image style */
+.mobile-screen {
+    width: 200px; /* Adjust the width as needed */
+    height: 450px; /* Adjust the height to maintain a mobile aspect ratio */
+    border-radius: 20px; /* Rounded corners like a mobile screen */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for a 3D effect */
+}
+
+
+/* testimonial section starts */
+.testimonial img:hover {
+    transform: scale(1.2, 1.2);
+    transition-duration: 1s;
+}
+
+.testimonial h4 {
+    color: #3f396d;
+}
+
+.testimonial i {
+    font-size: 2.9rem;
+    color: #fca61f;
+}
+
+.testimonial .nextprev-btn {
+    border: none;
+    background-color: #fff;
+}
+
+.prev:hover, .prev-btn:hover {
+    color: #6f34fe;
+    transform: translateX(-10px);
+    transition-duration: 1s;
+}
+
+.next:hover, .next-btn:hover {
+    color: #6f34fe;
+    transform: translateX(10px);
+    transition-duration: 1s;
+}
+
+/* achivment section starts */
+.blog {
+    background-color: #f2f2ff;
+}
+
+.blog .blogpost .card {
+    border: none;
+    border-radius: 5%;
+}
+
+.nav-bg {
+    background-color: #fff;
+}
+
+.blog .blogpost small {
+    color: #6f34fe;
+    font-size: 1.1rem;
+}
+
+.blog .blogpost h4, .blogpost a {
+    color: #3f396d;
+    font-weight: 700;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.blogpost a:hover {
+    color: #fca61f;
+}
+
+.blog .blogpost .read-more-btn {
+    text-decoration: none;
+    color: #fca61f;
+    font-size: 1.1rem;
+}
+
+.blog .blogpost .read-more-btn:hover {
+    color: #6f34fe;
+}
+
+
+
+/* styling modal group  */
+.btn-c {
+    margin-left: 94%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: -3%;
+}
+
+.btn-c i {
+    color: #fca61f;
+}
+
+.modal-body .content span {
+    font-size: 1rem;
+}
+
+.modal-body .content small {
+    font-size: 1rem;
+    color: #6f34fe;
+}
+
+/* contact section starts */
+.contact {
+    background-color: #f3f3f3;
+}
+
+.contact-details i {
+    font-size: 1.5rem;
+    color: #fca61f;
+}
+
+.contact-details p {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: none;
+    border-color: #fca61f;
+}
+
+.btn-submit {
+    background-color: #fca61f;
+    color: #fff;
+    font-weight: 700;
+}
+
+.btn-submit:hover {
+    background-color: #6f34fe;
+}
+
+/* footer section starts */
+footer {
+    background: #fca61f;
+}
+
+footer p {
+    color: #fff;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/*  responsive design */
+/* Base styles */
+.home h2 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+
+.navbar-nav a {
+    font-size: 1rem;
+}
+
+.home p {
+    font-size: 1rem;
+}
+
+/* Larger screens (≥768px) */
+@media (min-width: 768px) {
+    .home h2 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .navbar-nav a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Adjust styles for screens smaller than 768px */
+@media (max-width: 767px) {
+    /* Wrapper to center and align images/buttons */
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        overflow: visible; /* Ensures content isn't cut off */
+    }
+
+    /* Responsive main image */
+    .main-image {
+        width: 100%; /* Full width within its container */
+        max-width: 100%; /* Ensures the image does not exceed container */
+        height: auto; /* Maintains the aspect ratio */
+        display: block; /* Ensures visibility */
+        margin: 0 auto; /* Centers the image */
+        visibility: visible;
+    }
+
+    /* Responsive button styles */
+    .button {
+        padding: 0.5rem 1rem; /* Smaller padding for compact buttons */
+        font-size: 0.9rem; /* Adjusts font size for smaller screens */
+        display: block; /* Ensures visibility */
+        margin: 1rem auto; /* Centers button and adds space */
+        width: 80%; /* Adjusts button width for small screens */
+        text-align: center;
+        visibility: visible;
+    }
+
+    /* Adjusted text styles */
+    .home h2 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .home p, .navbar-nav a {
+        font-size: 0.9rem;
+    }
+}
+
+
